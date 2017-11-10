@@ -1,0 +1,12 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 4em;
+}
+
+ul.rtcstats {
+  font-family: monospace;
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+}

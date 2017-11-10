@@ -1,0 +1,25 @@
+<!-- views/signup.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+  <script>
+      $(document).ready(function () {
+          $(".nav li").removeClass("active");
+      });
+  </script>
+</head>
+<body>
+
+  <% include ../partials/navbar.ejs %>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1><span class="fa fa-sign-in"></span> Login</h1>
+
+          <p>Login or Signup:</p>
+
+          <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Login</a>
+          <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Signup</a>
+      </div>
+
+</body>
+</html>

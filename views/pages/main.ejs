@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+  <script>
+      $(document).ready(function () {
+          $(".nav li").removeClass("active");
+          $('#profile').addClass('active');
+      });
+  </script>
+</head>
+<body>
+
+  <% include ../partials/navbar.ejs %>
+
+  <div class="container-fluid">
+    The main page (not protected)
+  </div>
+
+  <% include ../partials/footer.ejs %>
+
+</body>

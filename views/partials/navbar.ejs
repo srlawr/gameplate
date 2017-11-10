@@ -1,0 +1,20 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a id="home" class="navbar-brand" href="/">Game title</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+          <li id="main"><a href="/main">A Game Page</a></li>
+          <% if(user) { %>
+              <li><a href="/profile">User Profile</a></li>
+              <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+          <% } %>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<% if (locals.message && message.length > 0) { %>
+    <div class="alert alert-danger"><%= message %></div>
+<% } %>
